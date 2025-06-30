@@ -1,0 +1,168 @@
+/* Estilos generales */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+body
+{
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;*/
+}
+/* HEADER */
+header
+{
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+img
+{
+    width: 10vh;
+}
+/* NAV - Menú de navegación */
+nav
+{
+    background: #34495e;
+    padding: 10px;
+}
+nav ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li
+{
+    margin: 0 15px;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav ul li a:hover
+{
+    text-decoration: underline;
+}
+/* MAIN - Contenido principal */
+main
+{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+main h1
+{
+    margin-bottom: 10px;
+}
+main p
+{
+    font-size: 1.1em;
+}
+.inicio_sesion
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.catalogo
+{
+    display: flex;
+    flex-wrap: wrap; /* los div flex que no quepan, se van a la sig. línea */
+    gap: 16px; /* espacio entre cada div flex */
+    padding: 16px;
+    justify-content: flex-start;
+}
+.producto
+{
+    background-color: f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: calc(25% - 16px);
+    box-sizing: border-box;
+    text-align: center;
+}
+.producto p
+{
+    margin: 12px 0 8px 0;
+}
+.producto img
+{
+    max-width: 100%;
+}
+.detalle_pedido
+{
+    color: #2c3e50;
+}
+/* FOOTER */
+footer
+{
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+footer a
+{
+    color: #f1c40f;
+    text-decoration: none;
+}
+footer a:hover
+{
+    text-decoration: underline;
+}
+/* media query */
+@media (max-width: 1200px)
+{
+    .producto
+    {
+        width: calc(33.333% - 16px);
+    }
+}
+@media (max-width: 768px)
+{
+    .producto
+    {
+        width: calc(50% - 16px);
+    }
+}
+@media (max-width: 480px)
+{
+    .producto
+    {
+        width: 100%;
+    }
+}
